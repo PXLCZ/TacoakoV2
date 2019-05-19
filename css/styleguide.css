@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Opposit-Regular';
+  src: url('../assets/fonts/Opposit-Regular.woff'),
+       url('../assets/fonts/Opposit-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Opposit-Light';
+  src: url('../assets/fonts/Opposit-Light.woff'),
+       url('../assets/fonts/Opposit-Light.ttf');
+}
+
+@import url("https://p.typekit.net/p.css?s=1&k=xgs7ade&ht=tk&f=139.140.169.173.174.175.176.25136.25137&a=6431270&app=typekit&e=css");
+
+#opposit-light {
+  font-family: 'Opposit-Light';
+}
+
+.styleguide h3{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  text-transform: uppercase;
+  border-bottom: 2px solid #F3DC7D;
+  width: 180px;
+  padding-bottom: 30px;
+  /* padding-right: */
+}
+
+
+/* Logo Section Styling */
+#logo-section{
+  /* background-color: #e08796; */
+}
+
+/* Typography Section Styling */
+#typography{
+  /* background-color: #f5df7a; */
+}
+#typography-opposit{
+  font-family: 'Opposit-Regular';
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 0.3em;
+}
+#typography-proxima{
+  font-size: 2em;
+  letter-spacing: 0.3em;
+}
+
+/* Graphics Section Styling */
+#graphics{
+  /* background-color: #fff; */
+}
+
+.highlight:before{
+  content: "";
+  position: absolute;
+   bottom: -5px;
+   top: 65%;
+   left: 0px;
+   right: 10%; 
+  background-color: #F3DC7D;
+   z-index: -1; 
+}
+
+.highlight{
+  position: relative;
+}
+
+#taco-heading{
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+
+/* Color Section Styling */
+#colors{
+  /* background-color: #fff; */
+}
+
+#hex1 {
+  width: 75px;
+  height: 75px;
+}
+
+#hex2 {
+  width: 75px;
+  height: 75px;
+}
+
+#hex3 {
+  width: 75px;
+  height: 75px;
+}
+
+#hex4 {
+  width: 75px;
+  height: 75px;
+}
+
+#hex5 {
+  width: 75px;
+  height: 75px;
+}
+
+#color1 {
+  background-color: #e08796; 
+}
+
+#color2 {
+  background-color: #f5df7a;
+}
+
+#color3 {
+  background-color: #78ba9c;
+}
+
+#color4 {
+  background-color: #ba5736;
+}
+
+#color5 {
+  background-color: #85425c;
+}
+
+.hexagon-wrapper {
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.hexagon {
+  height: 100%;
+  width: calc(100% * 0.57735);
+  display: inline-block;
+}
+
+.hexagon:before {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(60deg);
+}
+
+.hexagon:after {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(-60deg);
+}

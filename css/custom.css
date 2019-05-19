@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Opposit-Regular';
+    src: url('../assets/fonts/Opposit-Regular.woff'),
+         url('../assets/fonts/Opposit-Regular.ttf');
+}
+
+#foodmenu h1, h2, h3, h4, h5 {
+    font-family: 'Opposit-Regular';
+    text-transform: uppercase;
+}
+
+#contact-container h1, h2, h3, h4, h5 {
+    font-family: 'Opposit-Regular';
+    text-transform: uppercase;
+}
+/*Header/Navbar Area*/
+
+.main-menu > ul > li > a {color: #fff; padding: 0 24px 15px  24px; font-size:18px;}
+
+/* Start Media Queries */
+
+@media (min-width: 320px) and (max-width: 992px) {
+  #birdlogo, #chalupapop, #heart_top{
+    display:none;
+  }
+  #kakaako-head{
+    font-size: 22px;
+  }
+  #heart_table{
+    display:none;
+  }
+  #tacolove{
+    padding: 0px 32px 0px 32px !important;
+  }
+  #tacolove.m{
+    padding: 0px 32px 0px 32px !important;
+  }
+  #streettaco{
+    padding: 0px 16px 0px 16px !important;
+  }
+  #tacoquotemobile{
+    padding: 0px auto 0px auto !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  #d-chalupa{
+    display:none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #logo_home{
+    display:none;
+  }
+  #mobile-chalupa{
+    display:none;
+  }
+}
+/* End Media Queries*/
+
+#main-kakaako {
+	position: relative;
+	height: 600px;
+	background: #222222;
+	background-size: cover;
+	color: #fff;
+	width: 100%;
+	font-size: 16px;
+	display: table;
+	z-index: 99;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#kakaako-head{
+font-weight: 400;
+font-size: 26px;
+letter-spacing: 0.08em;
+text-align: center;
+color: #fffdfd;
+padding-bottom: 5%;
+}
+
+/*Chalupacabra Section*/
+#heart_table{
+  overflow: hidden;
+  margin-top: 25%;
+     padding-bottom: 5%;
+}
+
+
+#hearts{
+    float: none;
+    vertical-align: bottom;
+}
+
+#tacolove{
+  padding: 100px 0 0 0 !important;
+}
+
+#tacolove.m{
+  padding: 100px 0 0 0 !important;
+}
+
+  #tacoquotemobile {
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+    min-height: 140px;
+    min-width: auto;
+    position: relative;
+    text-align: center;
+    padding: 50px 50px;
+    margin-bottom: 100px;
+  }
+  #tacoquotemobile:after {
+    content: " ";
+    background: transparent;
+    border: 40px solid transparent;
+    border-width: 100px 0px 0 100px;
+    border-top-color: #fff;
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: -50px;
+    right: 51%;
+    -webkit-transform: skewX(-30deg);
+    -moz-transform: skewX(-30deg);
+    -o-transform: skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    transform: skewX(-30deg);
+    z-index: -99;
+    
+  }
+
+#quote {
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  min-height: 140px;
+  min-width: auto;
+  position: relative;
+  text-align: center;
+  padding: 50px 50px;
+  margin-bottom: 100px;
+}
+#quote:after {
+  content: " ";
+  background: transparent;
+  border: 40px solid transparent;
+  border-width: 70px 0px 0 100px;
+  border-top-color: #fff;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: -50px;
+  right: 10%;
+  top: 80%;
+  -webkit-transform: skewX(45deg);
+  -moz-transform: skewX(45deg);
+  -o-transform: skewX(45deg);
+  -ms-transform: skewX(45deg);
+  transform: skewX(45deg);
+  z-index: -99;
+}
+  
+#main-chalupa{
+	background-color: #000;
+	align-items: center;
+}
+
+.chalupa{
+	background-color: #96C0AC;
+	align-items: center;
+}
+
+#tacopop{
+     margin-top: 55%;
+     padding-bottom: 5%;
+}
+
+.highlight-menu{
+  position: relative;
+  top: -11px;
+  left: 10px;
+}
+
+.background-menu{
+  position: absolute;
+  padding-left: 10px;
+  background: #F3DC7D;
+  height: 15px;
+}
+
+.in:after{
+  content: "";
+  position: absolute;
+   bottom: -5px;
+   top: 65%;
+   left: 0px;
+   right: 10%; 
+  background-color: #F3DC7D;
+   z-index: -1; 
+}
+
+.in{
+  position: relative;
+}
+
+#burrito, #sides, #extras{
+  padding-left: 3px;
+}
+
+#in-contact{
+  z-index: 99;
+}
+
+#in-location{
+  z-index: 99;
+}
+
+.menu_align ul{
+  padding-left: 0px !important;
+}
+
+/*Contact Info*/
+#location{
+	background-image:url(../img/wall_graphics2.png);
+	height: auto;
+  padding-top: 80px;
+}
+
+#contactform{
+	background-color: white;
+}
+
+/*Social media*/
+#gallery{
+  background-image:url(../img/Tacoako_stripes.jpg);
+  background-repeat: no-repeat;
+	background-size: cover;
+  padding-top: 80px;
+}
+
+#bordb{
+  padding-left: 50px;
+  -webkit-box-shadow: 20 20px 10px -10px #b4e7f8;
+     -moz-box-shadow: 0 8px 6px -6px #b4e7f8;
+          box-shadow: 0 8px 6px -6px #b4e7f8;
+  }
+  #myDIV {
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-left: 50px;
+    width:200px;
+    height:100px;
+    box-shadow: -20px 30px 0px -20px  #F3DC7D;
+    z-index: 99;
+}
+
+/*button for contact form*/
+
+a.btn_t, .btn_t{
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color:#000;
+  background: #F3DC7D;
+  cursor: pointer;
+  padding: 7px 20px;
+  display: inline-block;
+  outline: none;
+  font-size:12px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 0px;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+
+a.btn_t:hover, .btn_t:hover {
+  background: #333;
+}
+
+/*Misc Margins*/
+.margin_40{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* footer area */
+.margin_80{
+  padding-top: 100px;
+}
