@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,7 +31,6 @@
     <link rel="stylesheet" href="css/instagram.css" >
     <link rel="stylesheet" href="css/instagram.scss" >
     <link rel="stylesheet" href="css/custom.css" >
-    <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="dist/aos.css" />
     
 </head>
@@ -93,8 +93,7 @@
     </header><!-- End Header -->
 
     <section class="text-center" id="main-kakaako">
-        <div id="main-chalupa" style="background: #222222";
-        ">
+        <div id="main-chalupa" style="background: #222222";>
             <div class="row" id="home">
                 
                 <div class="col-lg-4" id="chalupapop">
@@ -241,7 +240,6 @@
                                 <br>Roasted cauliflower, chickpea, cilantro, cabbage, jalapeño, cilantro crema
                             </ul>
                         </div>
-                        
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
                         <h1 style="text-align: left;"><span class="in" id="burrito">Burrito</span></h1>
@@ -317,54 +315,39 @@
                     <div class="step">
 
                         <div id="message-contact"></div>
-                        <form method="post" action="assets/contact.php" id="contactform">
+                        <!-- Starting of ajax contact form -->
+                        <form class="contact__form" method="post" action="assets/contact.php">
+                            <!-- Starting of successful form message -->
                             <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label>Name</label>
-                                        <input type="text" class="form-control" id="name_contact" name="name_contact" placeholder="Enter Name">
-                                    </div>
-                                </div>
-                                <!-- <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label>Last Name</label>
-                                        <input type="text" class="form-control" id="lastname_contact" name="lastname_contact" placeholder="Enter Last Name">
-                                    </div>
-                                </div> -->
-                            </div>
-                            <!-- End row -->
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label>Email</label>
-                                        <input type="email" id="email_contact" name="email_contact" class="form-control" placeholder="Enter Email">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label>Phone</label>
-                                        <input type="text" id="phone_contact" name="phone_contact" class="form-control" placeholder="Enter Phone number">
+                                <div class="col-12">
+                                    <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                                        Your message was sent successfully. Thank you for your interest!
                                     </div>
                                 </div>
                             </div>
+                            <!-- Ending of successful form message -->
+
+                            <!-- Element of the ajax contact form -->
                             <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label>Message</label>
-                                        <textarea rows="5" id="message_contact" name="message_contact" class="form-control" placeholder="Write your message" style="height:200px;"></textarea>
-                                    </div>
+                                <div class="col-md-6 form-group">
+                                    <input name="name" type="text" class="form-control" placeholder="Name" required>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 mx-auto">
-                                    <!-- <label>Human verification</label>
-                                    <input type="text" id="verify_contact" class=" form-control add_bottom_30" placeholder="Are you human? 3 + 1 ="> -->
-                                    <div class="col-sm-6 col-md-6 mx-auto text-center">
-                                        <input type="submit" value="Send" class="btn_t" id="submit-contact">
-                                    </div>
+                                <div class="col-md-6 form-group">
+                                    <input name="email" type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input name="phone" type="text" class="form-control" placeholder="Phone" required>
+                                </div>
+                                <div class="col-12 form-group">
+                                    <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <input name="submit" type="submit" class="btn btn-success" value="Send Message">
                                 </div>
                             </div>
                         </form>
+                        <!-- Ending of ajax contact form -->
+
                     </div>
                 </div>
             </div>
@@ -419,24 +402,10 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85807/instafeed.min.js"></script>
     <script src="js/instagram.js"></script>
 
-    <!-- Video header scripts -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/video_header.js"></script>
-    <script>
-        $(document).ready(function() {
-
-            HeaderVideo.init({
-                container: $('.header-video'),
-                header: $('.header-video--media'),
-                videoTrigger: $("#video-trigger"),
-                autoPlayVideo: false
-            });
-
-        });
-    </script>
     <!-- Custom Scripts -->
     <script src="js/scroll.js"></script>
     <script src="dist/aos.js"></script>
+    <script src="js/main.js"></script>
     <!-- <script src="js/tilt.jquery.js"></script> -->
     <script>
       AOS.init({
