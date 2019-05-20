@@ -26,7 +26,7 @@
         form_data = $(this).serialize();
         $.ajax({
             type: 'POST',
-            url: '/assets/contact.php',
+            url: form.attribute('action'),
             data: form_data
         })
         .done(done_func)
