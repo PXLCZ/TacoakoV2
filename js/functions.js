@@ -21,7 +21,6 @@ $(window).scroll(function () {
 /* Menu */
 $('a.open_close').on("click", function () {
 	$('.main-menu').toggleClass('show');
-	$('.layer').toggleClass('layer-is-visible');
 });
 $('a.show-submenu').on("click", function () {
 	$(this).next().toggleClass("show_normal");

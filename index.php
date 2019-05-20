@@ -47,7 +47,6 @@
     </div>
     <!-- End Preload -->
 
-    <div class="layer"></div>
     <!-- Header================================================== -->
     <header class="sticky">        
         <div class="container">
