@@ -2,7 +2,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         # FIX: Replace this email with recipient email
-        $mail_to = "awang0124@gmail.com";
+        $mail_to = "test@test.takoako.com";
         
         # Sender Data
         $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
@@ -26,7 +26,7 @@
         $content .= "Message:\n$message\n";
 
         # email headers.
-        $headers = "From: $name &lt;$email&gt;";
+        $headers = "From: test@test.takoako.com \n";
 
         # Send the email.
         if (mail($mail_to, $subject, $content, $headers)) {
