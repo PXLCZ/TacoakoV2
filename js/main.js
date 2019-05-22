@@ -31,6 +31,10 @@
         })
         .done(done_func)
         .fail(fail_func);
+        // on submit, scroll up to contact div beginning
+        $('html, body').animate({
+            scrollTop: $("#contactScroll").offset().top
+        }, 500);
     });
     
 })(jQuery);

@@ -125,7 +125,6 @@
                         </table>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -178,7 +177,6 @@
 <section class="text-center chalupa" id="mobile-chalupa">
     <div class="">
         <div class="row">
-            
             <div class="col-lg-6 col-md-12" id="tacolove.m" style="padding-top: 50px;">
                 <div class="mx-auto mb-5 mb-lg-0 mb-lg-3" id="streettaco" style="padding: 0px 0px 60px 0px";>
                     <p data-aos="fade-up" id="tacoquotemobile" style="font-size: 20px; line-height: 30px;">We bring to you a street taco joint in Kakaʻako that serves you fresh ingredients and homemade tortillas with authentic flavors. So come on over friend, and let&#39;s taco about it!</p>
