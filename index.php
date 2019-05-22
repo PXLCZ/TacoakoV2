@@ -302,7 +302,7 @@
                     </div>
                     <div class="step">
 
-                        <div id="message-contact"></div>
+                        <div id="contactScroll" id="message-contact"></div>
                         <!-- Starting of ajax contact form -->
                         <form class="contact__form" id="contactform" method="post" action="assets/contact.php">
                             <!-- Starting of successful form message -->
