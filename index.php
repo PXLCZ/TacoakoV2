@@ -297,12 +297,12 @@
                         <br>11am–3pm</strong>
                     </p>
                     </div>
-                    <div class="form_title">
+                    <div id="contactScroll" class="form_title">
                         <h1 style="text-align:center; font-size: 55px; text-transform: uppercase; padding-top: 48px;"><span class="in" id="in-contact"><strong>Contact Us</strong></span></h1>
                     </div>
                     <div class="step">
 
-                        <div id="contactScroll" id="message-contact"></div>
+                        <div id="message-contact"></div>
                         <!-- Starting of ajax contact form -->
                         <form class="contact__form" id="contactform" method="post" action="assets/contact.php">
                             <!-- Starting of successful form message -->
